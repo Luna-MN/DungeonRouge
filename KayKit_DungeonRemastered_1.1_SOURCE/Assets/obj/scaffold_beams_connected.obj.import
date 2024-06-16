@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dwtu16cmkao1x"
+path="res://.godot/imported/scaffold_beams_connected.obj-7b9eef2555c593330902affd47a644fe.mesh"
+
+[deps]
+
+files=["res://.godot/imported/scaffold_beams_connected.obj-7b9eef2555c593330902affd47a644fe.mesh"]
+
+source_file="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/scaffold_beams_connected.obj"
+dest_files=["res://.godot/imported/scaffold_beams_connected.obj-7b9eef2555c593330902affd47a644fe.mesh", "res://.godot/imported/scaffold_beams_connected.obj-7b9eef2555c593330902affd47a644fe.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

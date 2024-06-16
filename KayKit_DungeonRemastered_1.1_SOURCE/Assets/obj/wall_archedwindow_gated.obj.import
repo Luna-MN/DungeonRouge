@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://wpcutxfjj75a"
+path="res://.godot/imported/wall_archedwindow_gated.obj-5e0c29266802baf14e17ae6b63768e7e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall_archedwindow_gated.obj-5e0c29266802baf14e17ae6b63768e7e.mesh"]
+
+source_file="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_archedwindow_gated.obj"
+dest_files=["res://.godot/imported/wall_archedwindow_gated.obj-5e0c29266802baf14e17ae6b63768e7e.mesh", "res://.godot/imported/wall_archedwindow_gated.obj-5e0c29266802baf14e17ae6b63768e7e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

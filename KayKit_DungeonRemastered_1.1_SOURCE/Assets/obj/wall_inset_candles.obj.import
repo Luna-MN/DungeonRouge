@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://2812vugc1m8o"
+path="res://.godot/imported/wall_inset_candles.obj-fada867ffe98b0d6af2b5a5e1045785e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall_inset_candles.obj-fada867ffe98b0d6af2b5a5e1045785e.mesh"]
+
+source_file="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_inset_candles.obj"
+dest_files=["res://.godot/imported/wall_inset_candles.obj-fada867ffe98b0d6af2b5a5e1045785e.mesh", "res://.godot/imported/wall_inset_candles.obj-fada867ffe98b0d6af2b5a5e1045785e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dw7rompmmjp85"
+path="res://.godot/imported/book_tan.obj-910b4a83e63d57c7f0dfb69fdb852731.mesh"
+
+[deps]
+
+files=["res://.godot/imported/book_tan.obj-910b4a83e63d57c7f0dfb69fdb852731.mesh"]
+
+source_file="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/book_tan.obj"
+dest_files=["res://.godot/imported/book_tan.obj-910b4a83e63d57c7f0dfb69fdb852731.mesh", "res://.godot/imported/book_tan.obj-910b4a83e63d57c7f0dfb69fdb852731.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

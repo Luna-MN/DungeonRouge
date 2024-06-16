@@ -1,0 +1,36 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bpjyndn8cir6g"
+path.s3tc="res://.godot/imported/box_large-1228d07cfb833f055e723b803883f3c8_dungeon_texture.png-3ea98187089a36794faaf36800f7f2ae.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={}
+
+[deps]
+
+source_file="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/fbx(unity)/box_large-1228d07cfb833f055e723b803883f3c8_dungeon_texture.png"
+dest_files=["res://.godot/imported/box_large-1228d07cfb833f055e723b803883f3c8_dungeon_texture.png-3ea98187089a36794faaf36800f7f2ae.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

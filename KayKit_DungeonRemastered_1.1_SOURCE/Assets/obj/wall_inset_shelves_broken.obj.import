@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://kbto88f3k570"
+path="res://.godot/imported/wall_inset_shelves_broken.obj-a8511b0b6033c6c3858ee03a11d8ce51.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall_inset_shelves_broken.obj-a8511b0b6033c6c3858ee03a11d8ce51.mesh"]
+
+source_file="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_inset_shelves_broken.obj"
+dest_files=["res://.godot/imported/wall_inset_shelves_broken.obj-a8511b0b6033c6c3858ee03a11d8ce51.mesh", "res://.godot/imported/wall_inset_shelves_broken.obj-a8511b0b6033c6c3858ee03a11d8ce51.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

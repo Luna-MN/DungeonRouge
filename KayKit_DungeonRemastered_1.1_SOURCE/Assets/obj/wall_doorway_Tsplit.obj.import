@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bvx1mlx0dl3ug"
+path="res://.godot/imported/wall_doorway_Tsplit.obj-5a6aa4cd34400ad096359f74f1022fca.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall_doorway_Tsplit.obj-5a6aa4cd34400ad096359f74f1022fca.mesh"]
+
+source_file="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_doorway_Tsplit.obj"
+dest_files=["res://.godot/imported/wall_doorway_Tsplit.obj-5a6aa4cd34400ad096359f74f1022fca.mesh", "res://.godot/imported/wall_doorway_Tsplit.obj-5a6aa4cd34400ad096359f74f1022fca.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

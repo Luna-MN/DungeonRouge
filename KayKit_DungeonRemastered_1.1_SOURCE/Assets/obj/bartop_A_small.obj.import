@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b5ai400c4qule"
+path="res://.godot/imported/bartop_A_small.obj-2c5f161e4f913151d63ca9dabdfcb891.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bartop_A_small.obj-2c5f161e4f913151d63ca9dabdfcb891.mesh"]
+
+source_file="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/bartop_A_small.obj"
+dest_files=["res://.godot/imported/bartop_A_small.obj-2c5f161e4f913151d63ca9dabdfcb891.mesh", "res://.godot/imported/bartop_A_small.obj-2c5f161e4f913151d63ca9dabdfcb891.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

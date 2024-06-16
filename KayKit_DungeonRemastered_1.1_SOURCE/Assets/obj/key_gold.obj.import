@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cr4d7fyr0lerc"
+path="res://.godot/imported/key_gold.obj-5a39c30aa4b85d05659e5ec75aa3c9d1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/key_gold.obj-5a39c30aa4b85d05659e5ec75aa3c9d1.mesh"]
+
+source_file="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/key_gold.obj"
+dest_files=["res://.godot/imported/key_gold.obj-5a39c30aa4b85d05659e5ec75aa3c9d1.mesh", "res://.godot/imported/key_gold.obj-5a39c30aa4b85d05659e5ec75aa3c9d1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

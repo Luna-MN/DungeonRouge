@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cydpv0dlvahks"
+path="res://.godot/imported/scaffold_frame_small.obj-507571f58e78971061c2257917f5a53f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/scaffold_frame_small.obj-507571f58e78971061c2257917f5a53f.mesh"]
+
+source_file="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/scaffold_frame_small.obj"
+dest_files=["res://.godot/imported/scaffold_frame_small.obj-507571f58e78971061c2257917f5a53f.mesh", "res://.godot/imported/scaffold_frame_small.obj-507571f58e78971061c2257917f5a53f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

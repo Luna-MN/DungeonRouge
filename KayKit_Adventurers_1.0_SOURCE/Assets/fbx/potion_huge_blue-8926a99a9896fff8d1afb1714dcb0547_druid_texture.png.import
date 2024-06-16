@@ -1,0 +1,36 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://u5fyfb43wwph"
+path.s3tc="res://.godot/imported/potion_huge_blue-8926a99a9896fff8d1afb1714dcb0547_druid_texture.png-b6e824b612b7fbf82ca891bb6d20bbba.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={}
+
+[deps]
+
+source_file="res://KayKit_Adventurers_1.0_SOURCE/Assets/fbx/potion_huge_blue-8926a99a9896fff8d1afb1714dcb0547_druid_texture.png"
+dest_files=["res://.godot/imported/potion_huge_blue-8926a99a9896fff8d1afb1714dcb0547_druid_texture.png-b6e824b612b7fbf82ca891bb6d20bbba.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

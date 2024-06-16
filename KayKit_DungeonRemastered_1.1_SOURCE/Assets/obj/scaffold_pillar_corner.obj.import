@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cchd2wn0hnlqm"
+path="res://.godot/imported/scaffold_pillar_corner.obj-1de5e1e463a1c48b080c140ec5dbcb8c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/scaffold_pillar_corner.obj-1de5e1e463a1c48b080c140ec5dbcb8c.mesh"]
+
+source_file="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/scaffold_pillar_corner.obj"
+dest_files=["res://.godot/imported/scaffold_pillar_corner.obj-1de5e1e463a1c48b080c140ec5dbcb8c.mesh", "res://.godot/imported/scaffold_pillar_corner.obj-1de5e1e463a1c48b080c140ec5dbcb8c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

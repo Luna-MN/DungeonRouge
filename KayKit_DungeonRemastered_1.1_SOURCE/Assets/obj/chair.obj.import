@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ba5mc7tn0ga3o"
+path="res://.godot/imported/chair.obj-2690d85ce80a7909636a2f6091b2e129.mesh"
+
+[deps]
+
+files=["res://.godot/imported/chair.obj-2690d85ce80a7909636a2f6091b2e129.mesh"]
+
+source_file="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/chair.obj"
+dest_files=["res://.godot/imported/chair.obj-2690d85ce80a7909636a2f6091b2e129.mesh", "res://.godot/imported/chair.obj-2690d85ce80a7909636a2f6091b2e129.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

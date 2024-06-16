@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://6jly2gmxd1v3"
+path="res://.godot/imported/bookcase_double_decoratedA.obj-b27f1267bfc775a04312271da8430c78.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bookcase_double_decoratedA.obj-b27f1267bfc775a04312271da8430c78.mesh"]
+
+source_file="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/bookcase_double_decoratedA.obj"
+dest_files=["res://.godot/imported/bookcase_double_decoratedA.obj-b27f1267bfc775a04312271da8430c78.mesh", "res://.godot/imported/bookcase_double_decoratedA.obj-b27f1267bfc775a04312271da8430c78.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

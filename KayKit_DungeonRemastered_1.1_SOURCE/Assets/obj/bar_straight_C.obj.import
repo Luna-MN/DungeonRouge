@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cjcr2e366aym4"
+path="res://.godot/imported/bar_straight_C.obj-356ca5ec66077e55077c02a7ed46f46e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bar_straight_C.obj-356ca5ec66077e55077c02a7ed46f46e.mesh"]
+
+source_file="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/bar_straight_C.obj"
+dest_files=["res://.godot/imported/bar_straight_C.obj-356ca5ec66077e55077c02a7ed46f46e.mesh", "res://.godot/imported/bar_straight_C.obj-356ca5ec66077e55077c02a7ed46f46e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

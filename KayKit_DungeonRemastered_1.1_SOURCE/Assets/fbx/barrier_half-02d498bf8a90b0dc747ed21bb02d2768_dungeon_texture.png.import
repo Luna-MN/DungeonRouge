@@ -1,0 +1,36 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://btoi4ar2mnmqh"
+path.s3tc="res://.godot/imported/barrier_half-02d498bf8a90b0dc747ed21bb02d2768_dungeon_texture.png-d21a3b06dc97a6bf74cafb4b9c585a47.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={}
+
+[deps]
+
+source_file="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/fbx/barrier_half-02d498bf8a90b0dc747ed21bb02d2768_dungeon_texture.png"
+dest_files=["res://.godot/imported/barrier_half-02d498bf8a90b0dc747ed21bb02d2768_dungeon_texture.png-d21a3b06dc97a6bf74cafb4b9c585a47.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0
