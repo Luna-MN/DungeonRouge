@@ -1,0 +1,31 @@
+[gd_scene load_steps=9 format=3 uid="uid://cubirao3vebgk"]
+
+[ext_resource type="Script" path="res://Scripts/Floor.cs" id="1_au1qd"]
+[ext_resource type="ArrayMesh" uid="uid://bfkokhmi4s7jj" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_tile_small.obj" id="2_64pw0"]
+[ext_resource type="ArrayMesh" uid="uid://ckdd0ansu8pm4" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_tile_small_broken_A.obj" id="3_pc32x"]
+[ext_resource type="ArrayMesh" uid="uid://b06xyv2grtkiu" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_tile_small_broken_B.obj" id="4_lowmb"]
+[ext_resource type="ArrayMesh" uid="uid://c3byjrnm362q5" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_tile_small_decorated.obj" id="5_ogs1d"]
+[ext_resource type="ArrayMesh" uid="uid://bq7jc13a0pdr0" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_tile_small_weeds_A.obj" id="6_50qod"]
+[ext_resource type="ArrayMesh" uid="uid://cynd3tadxm4cb" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_tile_small_weeds_B.obj" id="7_4io7q"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yc1qr"]
+size = Vector3(2.00676, 0.104447, 2)
+
+[node name="RigidBody3D2" type="RigidBody3D" node_paths=PackedStringArray("meshInstance")]
+axis_lock_linear_x = true
+axis_lock_linear_y = true
+axis_lock_linear_z = true
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+axis_lock_angular_z = true
+gravity_scale = 0.0
+script = ExtResource("1_au1qd")
+meshs = Array[Mesh]([ExtResource("2_64pw0"), ExtResource("3_pc32x"), ExtResource("4_lowmb"), ExtResource("5_ogs1d"), ExtResource("6_50qod"), ExtResource("7_4io7q")])
+meshInstance = NodePath("FloorTileSmall")
+
+[node name="FloorTileSmall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("2_64pw0")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_yc1qr")
