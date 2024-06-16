@@ -1,3 +1,45 @@
-[gd_scene format=3 uid="uid://cd41yi40va3r0"]
+[gd_scene load_steps=5 format=3 uid="uid://cd41yi40va3r0"]
+
+[ext_resource type="ArrayMesh" uid="uid://bfkokhmi4s7jj" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_tile_small.obj" id="1_qrt0l"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lalca"]
+size = Vector3(2.00676, 0.104447, 2)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_umj4b"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xq4vv"]
+height = 2.12478
 
 [node name="Node3D" type="Node3D"]
+
+[node name="RigidBody3D2" type="RigidBody3D" parent="."]
+axis_lock_linear_x = true
+axis_lock_linear_y = true
+axis_lock_linear_z = true
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+axis_lock_angular_z = true
+gravity_scale = 0.0
+
+[node name="FloorTileSmall" type="MeshInstance3D" parent="RigidBody3D2"]
+mesh = ExtResource("1_qrt0l")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D2"]
+shape = SubResource("BoxShape3D_lalca")
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.37565, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.136556, 0)
+mesh = SubResource("CapsuleMesh_umj4b")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1946, 0)
+shape = SubResource("CapsuleShape3D_xq4vv")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.984741, 0.174026, 0, -0.174026, 0.984741, 0, 3.52735, 6.29623)
+fov = 83.7296
