@@ -20,39 +20,15 @@ public partial class Floor : RigidBody3D
 		six
 
 	}
-	[Export]
-	private Choices choice
-	{
-		get
-		{
-			return (Choices)selected;
-		}
-		set
-		{
-			selected = (int)value;
-			updateMesh();
-		}
-	}
 	// Called when the node enters the scene tree for the first time.
-	public override void _Ready()
-	{
-		if (selected < 0 || selected >= meshs.Length)
+		public override void _Process(double delta)
 		{
-			selected = 0;
+			if (selected < 0 || selected >= meshs.Length)
+			{
+				selected = 0;
+			}
+			meshInstance.Mesh = meshs[selected];
 		}
-		meshInstance.Mesh = meshs[selected];
-	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta)
-	{
-	}
-	private void updateMesh()
-	{
-		if (selected < 0 || selected >= meshs.Length)
-		{
-			selected = 0;
-		}
-		meshInstance.Mesh = meshs[selected];
-	}
 }
