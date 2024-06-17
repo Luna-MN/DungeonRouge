@@ -1,7 +1,7 @@
 using Godot;
 using System;
 using System.Collections.Generic;
-
+[Tool]
 public partial class Floor : RigidBody3D
 {
 	[Export]
@@ -10,6 +10,29 @@ public partial class Floor : RigidBody3D
 	private int selected = 0;
 	[Export]
 	private MeshInstance3D meshInstance;
+	private enum Choices
+	{
+		one,
+		two,
+		three,
+		four,
+		five,
+		six
+
+	}
+	[Export]
+	private Choices choice
+	{
+		get
+		{
+			return (Choices)selected;
+		}
+		set
+		{
+			selected = (int)value;
+			updateMesh();
+		}
+	}
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -23,5 +46,13 @@ public partial class Floor : RigidBody3D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
+	}
+	private void updateMesh()
+	{
+		if (selected < 0 || selected >= meshs.Length)
+		{
+			selected = 0;
+		}
+		meshInstance.Mesh = meshs[selected];
 	}
 }

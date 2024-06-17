@@ -1,27 +1,27 @@
 [gd_scene load_steps=17 format=3 uid="uid://ecm1rp22nq4b"]
 
-[ext_resource type="ArrayMesh" uid="uid://btuvq1qjmu17v" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall.obj" id="1_into2"]
-[ext_resource type="Script" path="res://Floor.cs" id="1_u1pgm"]
-[ext_resource type="ArrayMesh" uid="uid://qlphfh4kpniw" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_arched.obj" id="3_narot"]
-[ext_resource type="ArrayMesh" uid="uid://wpcutxfjj75a" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_archedwindow_gated.obj" id="4_ydtn4"]
-[ext_resource type="ArrayMesh" uid="uid://dgci82x878wj3" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_broken.obj" id="5_fwqr8"]
-[ext_resource type="ArrayMesh" uid="uid://cbu42iuxu4fls" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_gated.obj" id="6_he52q"]
-[ext_resource type="ArrayMesh" uid="uid://2812vugc1m8o" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_inset_candles.obj" id="7_5keix"]
-[ext_resource type="ArrayMesh" uid="uid://b2aiscqdu8y70" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_inset_shelves.obj" id="8_odsmd"]
-[ext_resource type="ArrayMesh" uid="uid://kbto88f3k570" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_inset_shelves_broken.obj" id="9_pb8d3"]
-[ext_resource type="ArrayMesh" uid="uid://dugtfqtefdoen" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_inset_shelves_decoratedA.obj" id="10_0bt0m"]
-[ext_resource type="ArrayMesh" uid="uid://dihrq1ybsab04" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_inset_shelves_decoratedB.obj" id="11_ayafl"]
-[ext_resource type="ArrayMesh" uid="uid://bnaxq8qq41c0m" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_shelves.obj" id="12_jgyh4"]
-[ext_resource type="ArrayMesh" uid="uid://dqn46s008mmt8" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_pillar.obj" id="13_ha7gg"]
-[ext_resource type="ArrayMesh" uid="uid://csnityulnu4ve" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_window_closed.obj" id="14_w0jfg"]
-[ext_resource type="ArrayMesh" uid="uid://dul3m3lile2fg" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_window_open.obj" id="15_r3aqo"]
+[ext_resource type="Script" path="res://Scripts/Floor.cs" id="1_sxmss"]
+[ext_resource type="ArrayMesh" uid="uid://btuvq1qjmu17v" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall.obj" id="2_w2p11"]
+[ext_resource type="ArrayMesh" uid="uid://qlphfh4kpniw" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_arched.obj" id="3_3w844"]
+[ext_resource type="ArrayMesh" uid="uid://wpcutxfjj75a" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_archedwindow_gated.obj" id="4_xpyx6"]
+[ext_resource type="ArrayMesh" uid="uid://dgci82x878wj3" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_broken.obj" id="5_dps7e"]
+[ext_resource type="ArrayMesh" uid="uid://cbu42iuxu4fls" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_gated.obj" id="6_dbdb2"]
+[ext_resource type="ArrayMesh" uid="uid://2812vugc1m8o" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_inset_candles.obj" id="7_v88dq"]
+[ext_resource type="ArrayMesh" uid="uid://b2aiscqdu8y70" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_inset_shelves.obj" id="8_0tqt0"]
+[ext_resource type="ArrayMesh" uid="uid://kbto88f3k570" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_inset_shelves_broken.obj" id="9_ovvtn"]
+[ext_resource type="ArrayMesh" uid="uid://dugtfqtefdoen" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_inset_shelves_decoratedA.obj" id="10_hpjn3"]
+[ext_resource type="ArrayMesh" uid="uid://dihrq1ybsab04" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_inset_shelves_decoratedB.obj" id="11_emb03"]
+[ext_resource type="ArrayMesh" uid="uid://bnaxq8qq41c0m" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_shelves.obj" id="12_m4f0k"]
+[ext_resource type="ArrayMesh" uid="uid://dqn46s008mmt8" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_pillar.obj" id="13_tc8bj"]
+[ext_resource type="ArrayMesh" uid="uid://csnityulnu4ve" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_window_closed.obj" id="14_2hlvv"]
+[ext_resource type="ArrayMesh" uid="uid://dul3m3lile2fg" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_window_open.obj" id="15_gqyte"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_uknpe"]
 size = Vector3(3.96341, 3.71943, 1.09379)
 
 [node name="RigidBody3D" type="RigidBody3D"]
-script = ExtResource("1_u1pgm")
-meshs = Array[Mesh]([ExtResource("1_into2"), ExtResource("3_narot"), ExtResource("4_ydtn4"), ExtResource("5_fwqr8"), ExtResource("6_he52q"), ExtResource("7_5keix"), ExtResource("8_odsmd"), ExtResource("9_pb8d3"), ExtResource("10_0bt0m"), ExtResource("11_ayafl"), ExtResource("12_jgyh4"), ExtResource("13_ha7gg"), ExtResource("14_w0jfg"), ExtResource("15_r3aqo")])
+script = ExtResource("1_sxmss")
+meshs = Array[Mesh]([ExtResource("2_w2p11"), ExtResource("3_3w844"), ExtResource("4_xpyx6"), ExtResource("5_dps7e"), ExtResource("6_dbdb2"), ExtResource("7_v88dq"), ExtResource("8_0tqt0"), ExtResource("9_ovvtn"), ExtResource("10_hpjn3"), ExtResource("11_emb03"), ExtResource("12_m4f0k"), ExtResource("13_tc8bj"), ExtResource("14_2hlvv"), ExtResource("15_gqyte")])
 selected = 6
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
@@ -29,4 +29,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.07674, 0)
 shape = SubResource("BoxShape3D_uknpe")
 
 [node name="Wall" type="MeshInstance3D" parent="."]
-mesh = ExtResource("1_into2")
+mesh = ExtResource("2_w2p11")
