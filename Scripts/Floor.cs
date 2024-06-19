@@ -7,15 +7,10 @@ public partial class Floor : RigidBody3D
 	[Export]
 	private Mesh[] meshs;
 	[Export]
-	private int selected
-	{
-		set { selected = value; meshUpdate(); }
-		get { return selected; }
-	}
+	private int selected;
 
 	public Floor()
 	{
-		selected = 0;
 	}
 	[Export]
 	private MeshInstance3D meshInstance;
