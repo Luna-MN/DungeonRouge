@@ -7,7 +7,8 @@ public partial class Floor : RigidBody3D
 	[Export]
 	private Mesh[] meshs;
 	[Export]
-	private int selected;
+	private int selected = 0;
+
 
 	public Floor()
 	{
@@ -30,17 +31,36 @@ public partial class Floor : RigidBody3D
 		if (selected < 0 || selected >= meshs.Length)
 		{
 			selected = 0;
+			meshInstance.Mesh = meshs[selected];
 		}
-		meshInstance.Mesh = meshs[selected];
+		else
+		{
+			meshInstance.Mesh = meshs[selected];
+		}
 	}
 
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public void meshUpdate()
-	{
-		if (selected < 0 || selected >= meshs.Length)
-		{
-			selected = 0;
-		}
-		meshInstance.Mesh = meshs[selected];
-	}
+	//Called every frame. 'delta' is the elapsed time since the previous frame.
+	//public void meshUpdate()
+	//{
+	//	try
+	//	{
+	//		if (selected < 0 || selected >= meshs.Length)
+	//		{
+	//			selected = 0;
+	//			meshInstance.Mesh = meshs[selected];
+	//		}
+	//		else
+	//		{
+	//			meshInstance.Mesh = meshs[selected];
+	//		}
+	//
+	//	}
+	//	catch (Exception)
+	//	{
+	//
+	//		throw;
+	//	}
+	//
+	//}
+
 }
