@@ -1,36 +1,3 @@
-[gd_scene load_steps=4 format=3 uid="uid://cd41yi40va3r0"]
-
-[ext_resource type="PackedScene" uid="uid://cubirao3vebgk" path="res://Scenes/Floor.tscn" id="1_v4703"]
-
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_umj4b"]
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xq4vv"]
-height = 2.12478
+[gd_scene format=3 uid="uid://1bsl8h5vr0du"]
 
 [node name="Node3D" type="Node3D"]
-
-[node name="RigidBody3D" type="RigidBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.37565, 0)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.136556, 0)
-mesh = SubResource("CapsuleMesh_umj4b")
-skeleton = NodePath("../..")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1946, 0)
-shape = SubResource("CapsuleShape3D_xq4vv")
-
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.984741, 0.174026, 0, -0.174026, 0.984741, 0, 3.52735, 6.29623)
-fov = 83.7296
-
-[node name="Floor Container" type="Node3D" parent="."]
-
-[node name="RigidBody3D3" parent="Floor Container" instance=ExtResource("1_v4703")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
-selected = 3
-
-[node name="RigidBody3D2" parent="Floor Container" instance=ExtResource("1_v4703")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.001)
-selected = 4

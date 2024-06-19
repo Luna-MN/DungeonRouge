@@ -1,0 +1,19 @@
+[gd_scene load_steps=6 format=3 uid="uid://cyhu8dnly5h0n"]
+
+[ext_resource type="Script" path="res://Scripts/Floor.cs" id="1_ui131"]
+[ext_resource type="ArrayMesh" uid="uid://dyj2kw6o6piee" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_dirt_small_A.obj" id="2_vgqmw"]
+[ext_resource type="ArrayMesh" uid="uid://bfek5shb3ehye" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_dirt_small_B.obj" id="3_nqdls"]
+[ext_resource type="ArrayMesh" uid="uid://ctspsudxfnv0r" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_dirt_small_C.obj" id="4_wcrku"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8n5f7"]
+
+[node name="RigidBody3D" type="RigidBody3D" node_paths=PackedStringArray("meshInstance")]
+script = ExtResource("1_ui131")
+meshs = [ExtResource("2_vgqmw"), ExtResource("3_nqdls"), ExtResource("4_wcrku")]
+selected = 2
+meshInstance = NodePath("MeshInstance3D")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_8n5f7")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
