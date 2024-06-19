@@ -21,6 +21,3 @@ shape = SubResource("BoxShape3D_365vi")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = ExtResource("4_3lpxs")
-
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.118856, 0.437885, -0.89114, -0.0578903, 0.899031, 0.434041, 0.991223, -3.69259e-09, 0.132204, -2.88757, 1.53037, 0)
