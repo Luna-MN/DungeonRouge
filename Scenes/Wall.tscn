@@ -1,0 +1,30 @@
+[gd_scene load_steps=8 format=3 uid="uid://ck5rjpa4p82an"]
+
+[ext_resource type="Script" path="res://Scripts/Floor.cs" id="1_gyxcf"]
+[ext_resource type="ArrayMesh" uid="uid://dyj2kw6o6piee" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_dirt_small_A.obj" id="2_p3hiq"]
+[ext_resource type="ArrayMesh" uid="uid://bfek5shb3ehye" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_dirt_small_B.obj" id="3_y6246"]
+[ext_resource type="ArrayMesh" uid="uid://ctspsudxfnv0r" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_dirt_small_C.obj" id="4_078tj"]
+[ext_resource type="ArrayMesh" uid="uid://bopyto8d5x0fg" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_dirt_small_corner.obj" id="5_od7ub"]
+[ext_resource type="ArrayMesh" uid="uid://mh6hvny3m74f" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_dirt_small_D.obj" id="6_p20v7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_365vi"]
+size = Vector3(2.01179, 0.111461, 1.99898)
+
+[node name="RigidBody3D" type="RigidBody3D" node_paths=PackedStringArray("meshInstance")]
+axis_lock_linear_x = true
+axis_lock_linear_y = true
+axis_lock_linear_z = true
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+axis_lock_angular_z = true
+script = ExtResource("1_gyxcf")
+meshs = [ExtResource("2_p3hiq"), ExtResource("3_y6246"), ExtResource("4_078tj"), ExtResource("5_od7ub"), ExtResource("6_p20v7"), null]
+selected = 2
+meshInstance = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.036656, 0)
+shape = SubResource("BoxShape3D_365vi")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("4_078tj")
