@@ -8,15 +8,22 @@
 [ext_resource type="ArrayMesh" uid="uid://mh6hvny3m74f" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_dirt_small_D.obj" id="6_1dpb1"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_365vi"]
-size = Vector3(1, 0.236028, 1)
+size = Vector3(2.01179, 0.111461, 1.99898)
 
 [node name="RigidBody3D" type="RigidBody3D" node_paths=PackedStringArray("meshInstance")]
+axis_lock_linear_x = true
+axis_lock_linear_y = true
+axis_lock_linear_z = true
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+axis_lock_angular_z = true
 script = ExtResource("1_1dedg")
 meshs = [ExtResource("2_e78v1"), ExtResource("3_fmw82"), ExtResource("4_3lpxs"), ExtResource("5_xheag"), ExtResource("6_1dpb1")]
 selected = 2
 meshInstance = NodePath("MeshInstance3D")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.036656, 0)
 shape = SubResource("BoxShape3D_365vi")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]

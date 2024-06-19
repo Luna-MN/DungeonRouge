@@ -1,3 +1,8 @@
-[gd_scene format=3 uid="uid://1bsl8h5vr0du"]
+[gd_scene load_steps=2 format=3 uid="uid://1bsl8h5vr0du"]
+
+[ext_resource type="PackedScene" uid="uid://caa6tydyirhr" path="res://Scenes/floor.tscn" id="1_kb3vk"]
 
 [node name="Node3D" type="Node3D"]
+
+[node name="RigidBody3D" parent="." instance=ExtResource("1_kb3vk")]
+selected = 1
