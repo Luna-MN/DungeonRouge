@@ -1,14 +1,23 @@
-[gd_scene load_steps=8 format=3 uid="uid://ck5rjpa4p82an"]
+[gd_scene load_steps=17 format=3 uid="uid://ck5rjpa4p82an"]
 
 [ext_resource type="Script" path="res://Scripts/Floor.cs" id="1_gyxcf"]
-[ext_resource type="ArrayMesh" uid="uid://dyj2kw6o6piee" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_dirt_small_A.obj" id="2_p3hiq"]
-[ext_resource type="ArrayMesh" uid="uid://bfek5shb3ehye" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_dirt_small_B.obj" id="3_y6246"]
-[ext_resource type="ArrayMesh" uid="uid://ctspsudxfnv0r" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_dirt_small_C.obj" id="4_078tj"]
-[ext_resource type="ArrayMesh" uid="uid://bopyto8d5x0fg" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_dirt_small_corner.obj" id="5_od7ub"]
-[ext_resource type="ArrayMesh" uid="uid://mh6hvny3m74f" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_dirt_small_D.obj" id="6_p20v7"]
+[ext_resource type="ArrayMesh" uid="uid://wpcutxfjj75a" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_archedwindow_gated.obj" id="3_dbvie"]
+[ext_resource type="ArrayMesh" uid="uid://cd0ffe6efhf8x" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_archedwindow_open.obj" id="4_56vkj"]
+[ext_resource type="ArrayMesh" uid="uid://dgci82x878wj3" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_broken.obj" id="5_tmpaq"]
+[ext_resource type="ArrayMesh" uid="uid://y1dri2frwtq0" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_cracked.obj" id="6_h530h"]
+[ext_resource type="ArrayMesh" uid="uid://cbu42iuxu4fls" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_gated.obj" id="7_csngq"]
+[ext_resource type="ArrayMesh" uid="uid://btuvq1qjmu17v" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall.obj" id="7_u5r44"]
+[ext_resource type="ArrayMesh" uid="uid://bssgnfmfd44q6" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_inset.obj" id="8_j1lul"]
+[ext_resource type="ArrayMesh" uid="uid://2812vugc1m8o" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_inset_candles.obj" id="9_11g5x"]
+[ext_resource type="ArrayMesh" uid="uid://b2aiscqdu8y70" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_inset_shelves.obj" id="10_7x6t1"]
+[ext_resource type="ArrayMesh" uid="uid://kbto88f3k570" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_inset_shelves_broken.obj" id="11_u2gjp"]
+[ext_resource type="ArrayMesh" uid="uid://dugtfqtefdoen" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_inset_shelves_decoratedA.obj" id="12_ajjd8"]
+[ext_resource type="ArrayMesh" uid="uid://dihrq1ybsab04" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_inset_shelves_decoratedB.obj" id="13_fgtht"]
+[ext_resource type="ArrayMesh" uid="uid://csnityulnu4ve" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_window_closed.obj" id="14_wtexh"]
+[ext_resource type="ArrayMesh" uid="uid://dul3m3lile2fg" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_window_open.obj" id="15_7bp02"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_365vi"]
-size = Vector3(2.01179, 0.111461, 1.99898)
+size = Vector3(3.98187, 4.05197, 0.992484)
 
 [node name="RigidBody3D" type="RigidBody3D" node_paths=PackedStringArray("meshInstance")]
 axis_lock_linear_x = true
@@ -18,13 +27,13 @@ axis_lock_angular_x = true
 axis_lock_angular_y = true
 axis_lock_angular_z = true
 script = ExtResource("1_gyxcf")
-meshs = [ExtResource("2_p3hiq"), ExtResource("3_y6246"), ExtResource("4_078tj"), ExtResource("5_od7ub"), ExtResource("6_p20v7"), null]
+meshs = [ExtResource("7_u5r44"), ExtResource("3_dbvie"), ExtResource("4_56vkj"), ExtResource("5_tmpaq"), ExtResource("6_h530h"), ExtResource("7_csngq"), ExtResource("8_j1lul"), ExtResource("9_11g5x"), ExtResource("10_7x6t1"), ExtResource("11_u2gjp"), ExtResource("12_ajjd8"), ExtResource("13_fgtht"), ExtResource("14_wtexh"), ExtResource("15_7bp02")]
 selected = 2
 meshInstance = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.036656, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.90058, 0)
 shape = SubResource("BoxShape3D_365vi")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-mesh = ExtResource("4_078tj")
+mesh = ExtResource("7_u5r44")
