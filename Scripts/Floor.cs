@@ -8,23 +8,8 @@ public partial class Floor : RigidBody3D
 	private Mesh[] meshs;
 	[Export]
 	private int selected = 0;
-
-
-	public Floor()
-	{
-	}
 	[Export]
 	private MeshInstance3D meshInstance;
-	private enum Choices
-	{
-		one,
-		two,
-		three,
-		four,
-		five,
-		six
-
-	}
 	// Called when the node enters the scene tree for the first time.
 	public override void _Process(double delta)
 	{
@@ -38,29 +23,4 @@ public partial class Floor : RigidBody3D
 			meshInstance.Mesh = meshs[selected];
 		}
 	}
-
-	//Called every frame. 'delta' is the elapsed time since the previous frame.
-	//public void meshUpdate()
-	//{
-	//	try
-	//	{
-	//		if (selected < 0 || selected >= meshs.Length)
-	//		{
-	//			selected = 0;
-	//			meshInstance.Mesh = meshs[selected];
-	//		}
-	//		else
-	//		{
-	//			meshInstance.Mesh = meshs[selected];
-	//		}
-	//
-	//	}
-	//	catch (Exception)
-	//	{
-	//
-	//		throw;
-	//	}
-	//
-	//}
-
 }
