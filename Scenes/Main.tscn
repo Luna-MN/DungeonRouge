@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://1bsl8h5vr0du"]
+[gd_scene load_steps=6 format=3 uid="uid://1bsl8h5vr0du"]
 
 [ext_resource type="PackedScene" uid="uid://caa6tydyirhr" path="res://Scenes/floor.tscn" id="1_kb3vk"]
 [ext_resource type="PackedScene" uid="uid://ck5rjpa4p82an" path="res://Scenes/Wall.tscn" id="2_yq6aj"]
+[ext_resource type="Script" path="res://Scripts/Player.cs" id="3_1hk2b"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_8o5ss"]
 
@@ -98,6 +99,10 @@ shadow_enabled = true
 
 [node name="Player" type="RigidBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+axis_lock_angular_z = true
+script = ExtResource("3_1hk2b")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
 mesh = SubResource("CapsuleMesh_8o5ss")
