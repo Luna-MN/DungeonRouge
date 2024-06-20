@@ -45,6 +45,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 3)
 [node name="RigidBody3D11" parent="Enviroment" instance=ExtResource("2_yq6aj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 3)
 
+[node name="Floor" parent="Enviroment" instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -4)
+
 [node name="RigidBody3D12" parent="Enviroment" instance=ExtResource("1_kb3vk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
 
@@ -52,6 +55,42 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
 
 [node name="RigidBody3D14" parent="Enviroment" instance=ExtResource("1_kb3vk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Floor2" parent="Enviroment" instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -4)
+
+[node name="Floor3" parent="Enviroment" instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -4)
+
+[node name="Floor4" parent="Enviroment" instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="Floor5" parent="Enviroment" instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 2)
+
+[node name="Floor6" parent="Enviroment" instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0)
+
+[node name="Floor7" parent="Enviroment" instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -2)
+
+[node name="Floor8" parent="Enviroment" instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -4)
+
+[node name="Wall" parent="Enviroment" instance=ExtResource("2_yq6aj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 3)
+
+[node name="Floor9" parent="Enviroment" instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 2)
+
+[node name="Floor10" parent="Enviroment" instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Floor11" parent="Enviroment" instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -2)
+
+[node name="Floor12" parent="Enviroment" instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -4)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.3675, 3.11546, -12.9635)
@@ -66,5 +105,5 @@ mesh = SubResource("CapsuleMesh_8o5ss")
 shape = SubResource("CapsuleShape3D_0e6ol")
 
 [node name="Camera3D" type="Camera3D" parent="RigidBody3D"]
-transform = Transform3D(-1, 6.51716e-08, -5.82701e-08, 0, 0.666532, 0.745476, 8.74228e-08, 0.745476, -0.666532, 1.16054, 5.15105, -3.43028)
+transform = Transform3D(-1, -8.74228e-08, -3.82137e-15, 0, -4.37114e-08, 1, -8.74228e-08, 1, 4.37114e-08, 0, 10, 0)
 fov = 101.566
