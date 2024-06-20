@@ -1,14 +1,16 @@
-[gd_scene load_steps=8 format=3 uid="uid://caa6tydyirhr"]
+[gd_scene load_steps=10 format=3 uid="uid://caa6tydyirhr"]
 
 [ext_resource type="Script" path="res://Scripts/Floor.cs" id="1_1dedg"]
-[ext_resource type="ArrayMesh" uid="uid://dyj2kw6o6piee" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_dirt_small_A.obj" id="2_e78v1"]
-[ext_resource type="ArrayMesh" uid="uid://bfek5shb3ehye" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_dirt_small_B.obj" id="3_fmw82"]
-[ext_resource type="ArrayMesh" uid="uid://ctspsudxfnv0r" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_dirt_small_C.obj" id="4_3lpxs"]
-[ext_resource type="ArrayMesh" uid="uid://bopyto8d5x0fg" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_dirt_small_corner.obj" id="5_xheag"]
-[ext_resource type="ArrayMesh" uid="uid://mh6hvny3m74f" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_dirt_small_D.obj" id="6_1dpb1"]
+[ext_resource type="ArrayMesh" uid="uid://bfkokhmi4s7jj" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_tile_small.obj" id="2_3nvyb"]
+[ext_resource type="ArrayMesh" uid="uid://ckdd0ansu8pm4" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_tile_small_broken_A.obj" id="3_joy51"]
+[ext_resource type="ArrayMesh" uid="uid://b06xyv2grtkiu" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_tile_small_broken_B.obj" id="4_ekwuy"]
+[ext_resource type="ArrayMesh" uid="uid://c3byjrnm362q5" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_tile_small_decorated.obj" id="5_40ssf"]
+[ext_resource type="ArrayMesh" uid="uid://bq7jc13a0pdr0" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_tile_small_weeds_A.obj" id="6_gtiyq"]
+[ext_resource type="ArrayMesh" uid="uid://cynd3tadxm4cb" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_tile_small_weeds_B.obj" id="7_ac86h"]
+[ext_resource type="ArrayMesh" uid="uid://cgmtouto7tmpk" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_wood_small.obj" id="8_86sxf"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_365vi"]
-size = Vector3(2.01179, 0.111461, 1.99898)
+size = Vector3(1.98132, 0.16889, 1.99618)
 
 [node name="RigidBody3D" type="RigidBody3D" node_paths=PackedStringArray("meshInstance")]
 axis_lock_linear_x = true
@@ -18,13 +20,12 @@ axis_lock_angular_x = true
 axis_lock_angular_y = true
 axis_lock_angular_z = true
 script = ExtResource("1_1dedg")
-meshs = [ExtResource("2_e78v1"), ExtResource("3_fmw82"), ExtResource("4_3lpxs"), ExtResource("5_xheag"), ExtResource("6_1dpb1")]
-selected = 2
+meshs = [ExtResource("2_3nvyb"), ExtResource("3_joy51"), ExtResource("4_ekwuy"), ExtResource("5_40ssf"), ExtResource("6_gtiyq"), ExtResource("7_ac86h"), ExtResource("8_86sxf")]
 meshInstance = NodePath("MeshInstance3D")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.036656, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0322426, 0)
 shape = SubResource("BoxShape3D_365vi")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-mesh = ExtResource("4_3lpxs")
+mesh = ExtResource("2_3nvyb")
