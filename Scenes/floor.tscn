@@ -10,7 +10,7 @@
 [ext_resource type="ArrayMesh" uid="uid://cgmtouto7tmpk" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/floor_wood_small.obj" id="8_86sxf"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_365vi"]
-size = Vector3(1.98132, 0.16889, 1.99618)
+size = Vector3(2, 0.173444, 2)
 
 [node name="Floor" type="RigidBody3D" node_paths=PackedStringArray("meshInstance")]
 axis_lock_linear_x = true
