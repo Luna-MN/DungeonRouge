@@ -12,4 +12,8 @@ public partial class Player : RigidBody3D
 	public override void _Process(double delta)
 	{
 	}
+	public override void _Input(InputEvent @event)
+	{
+
+	}
 }
