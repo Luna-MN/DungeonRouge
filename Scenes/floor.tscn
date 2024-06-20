@@ -12,7 +12,7 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_365vi"]
 size = Vector3(1.98132, 0.16889, 1.99618)
 
-[node name="RigidBody3D" type="RigidBody3D" node_paths=PackedStringArray("meshInstance")]
+[node name="Floor" type="RigidBody3D" node_paths=PackedStringArray("meshInstance")]
 axis_lock_linear_x = true
 axis_lock_linear_y = true
 axis_lock_linear_z = true

@@ -17,9 +17,9 @@
 [ext_resource type="ArrayMesh" uid="uid://dul3m3lile2fg" path="res://KayKit_DungeonRemastered_1.1_SOURCE/Assets/obj/wall_window_open.obj" id="15_7bp02"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_365vi"]
-size = Vector3(3.98187, 4.05197, 0.992484)
+size = Vector3(1.98132, 0.16889, 1.99618)
 
-[node name="RigidBody3D" type="RigidBody3D" node_paths=PackedStringArray("meshInstance")]
+[node name="Wall" type="RigidBody3D" node_paths=PackedStringArray("meshInstance")]
 axis_lock_linear_x = true
 axis_lock_linear_y = true
 axis_lock_linear_z = true
@@ -28,8 +28,7 @@ axis_lock_angular_y = true
 axis_lock_angular_z = true
 script = ExtResource("1_gyxcf")
 meshs = [ExtResource("7_u5r44"), ExtResource("3_dbvie"), ExtResource("4_56vkj"), ExtResource("5_tmpaq"), ExtResource("6_h530h"), ExtResource("7_csngq"), ExtResource("8_j1lul"), ExtResource("9_11g5x"), ExtResource("10_7x6t1"), ExtResource("11_u2gjp"), ExtResource("12_ajjd8"), ExtResource("13_fgtht"), ExtResource("14_wtexh"), ExtResource("15_7bp02")]
-selected = 2
-meshInstance = NodePath("")
+meshInstance = NodePath("MeshInstance3D")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.90058, 0)
