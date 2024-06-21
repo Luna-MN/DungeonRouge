@@ -3,6 +3,7 @@ using System;
 
 public partial class Player : RigidBody3D
 {
+	private Key oldkey;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -14,11 +15,19 @@ public partial class Player : RigidBody3D
 	}
 	public override void _Input(InputEvent @event)
 	{
-		if (@event is InputEventKey)
+		if (@event is InputEventKey keyP)
 		{
 			int speed = 20;
 			if (Input.IsKeyPressed(Key.W))
 			{
+				if (keyP.Pressed)
+				{
+					if (oldkey == Key.S)
+					{
+						LinearVelocity *= new Vector3(1, 1, 0);
+					}
+					oldkey = Key.W;
+				}
 				if (LinearVelocity.Z <= 1)
 				{
 					LinearVelocity += Vector3.Back * speed;
@@ -30,6 +39,14 @@ public partial class Player : RigidBody3D
 			}
 			if (Input.IsKeyPressed(Key.S))
 			{
+				if (keyP.Pressed)
+				{
+					if (oldkey == Key.W)
+					{
+						LinearVelocity *= new Vector3(1, 1, 0);
+					}
+					oldkey = Key.S;
+				}
 				if (LinearVelocity.Z >= -1)
 				{
 					LinearVelocity += Vector3.Forward * speed;
@@ -41,6 +58,14 @@ public partial class Player : RigidBody3D
 			}
 			if (Input.IsKeyPressed(Key.D))
 			{
+				if (keyP.Pressed)
+				{
+					if (oldkey == Key.A)
+					{
+						LinearVelocity *= new Vector3(0, 1, 1);
+					}
+					oldkey = Key.D;
+				}
 				if (LinearVelocity.X >= -1)
 				{
 					LinearVelocity += Vector3.Left * speed;
@@ -53,6 +78,14 @@ public partial class Player : RigidBody3D
 			if (Input.IsKeyPressed(Key.A))
 			{
 				GD.Print(LinearVelocity);
+				if (keyP.Pressed)
+				{
+					if (oldkey == Key.D)
+					{
+						LinearVelocity *= new Vector3(0, 1, 1);
+					}
+					oldkey = Key.A;
+				}
 				if (LinearVelocity.X <= 1)
 				{
 					LinearVelocity += Vector3.Right * speed;
