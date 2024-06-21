@@ -17,32 +17,36 @@ public partial class Player : RigidBody3D
 		if (@event is InputEventKey keyPressed)
 		{
 			GD.Print("mlem");
-			int speed = 5;
+			int speed = 10;
 			if (Input.IsKeyPressed(Key.W))
 			{
-				if (LinearVelocity > new Vector3(0, 0, -20))
+				GD.Print(LinearVelocity);
+				if (LinearVelocity >= new Vector3(0, 0, -20))
 				{
 					LinearVelocity += Vector3.Forward * speed;
 				}
 			}
 			if (Input.IsKeyPressed(Key.S))
 			{
-				if (LinearVelocity > new Vector3(0, 0, 20))
+				GD.Print(LinearVelocity);
+				if (LinearVelocity <= new Vector3(0, 0, 20))
 				{
-					GD.Print(LinearVelocity);
 					LinearVelocity += Vector3.Back * speed;
 				}
 			}
 			if (Input.IsKeyPressed(Key.D))
 			{
-				if (LinearVelocity > new Vector3(-20, 0, 0))
+				GD.Print(LinearVelocity);
+				if (LinearVelocity >= new Vector3(-20, 0, 0))
 				{
+					GD.Print("called");
 					LinearVelocity += Vector3.Left * speed;
 				}
 			}
 			if (Input.IsKeyPressed(Key.A))
 			{
-				if (LinearVelocity > new Vector3(20, 0, 0))
+				GD.Print(LinearVelocity);
+				if (LinearVelocity <= new Vector3(20, 0, 0))
 				{
 					LinearVelocity += Vector3.Right * speed;
 				}
