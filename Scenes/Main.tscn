@@ -13,6 +13,38 @@
 [node name="Enviroment" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
 
+[node name="Floor61" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -14)
+meshInstance = NodePath("../Floor13/MeshInstance3D")
+
+[node name="Floor62" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -14)
+meshInstance = NodePath("../Floor14/MeshInstance3D")
+
+[node name="Floor63" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -14)
+meshInstance = NodePath("../Floor15/MeshInstance3D")
+
+[node name="Floor64" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -14)
+meshInstance = NodePath("../Floor16/MeshInstance3D")
+
+[node name="Floor65" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -14)
+meshInstance = NodePath("../Floor17/MeshInstance3D")
+
+[node name="Floor66" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -14)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor67" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -14)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor68" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, -14)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
 [node name="RigidBody3D" parent="Enviroment" instance=ExtResource("1_kb3vk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
 
@@ -92,6 +124,352 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -2)
 
 [node name="Floor12" parent="Enviroment" instance=ExtResource("1_kb3vk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -4)
+
+[node name="Floor13" parent="Enviroment" instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="Floor14" parent="Enviroment" instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -6)
+
+[node name="Floor15" parent="Enviroment" instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -6)
+
+[node name="Floor16" parent="Enviroment" instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -6)
+
+[node name="Floor17" parent="Enviroment" instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -6)
+
+[node name="Floor18" parent="Enviroment" instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -6)
+
+[node name="Floor19" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, 2)
+meshInstance = NodePath("../Floor9/MeshInstance3D")
+
+[node name="Floor20" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, 0)
+meshInstance = NodePath("../Floor10/MeshInstance3D")
+
+[node name="Floor21" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -2)
+meshInstance = NodePath("../Floor11/MeshInstance3D")
+
+[node name="Floor22" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -4)
+meshInstance = NodePath("../Floor12/MeshInstance3D")
+
+[node name="Floor23" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -6)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor24" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 2)
+meshInstance = NodePath("../Floor9/MeshInstance3D")
+
+[node name="Floor25" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 0)
+meshInstance = NodePath("../Floor10/MeshInstance3D")
+
+[node name="Floor26" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, -2)
+meshInstance = NodePath("../Floor11/MeshInstance3D")
+
+[node name="Floor27" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, -4)
+meshInstance = NodePath("../Floor12/MeshInstance3D")
+
+[node name="Floor28" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, -6)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor29" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16)
+meshInstance = NodePath("../Floor13/MeshInstance3D")
+
+[node name="Floor30" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -16)
+meshInstance = NodePath("../Floor14/MeshInstance3D")
+
+[node name="Floor31" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -16)
+meshInstance = NodePath("../Floor15/MeshInstance3D")
+
+[node name="Floor32" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -16)
+meshInstance = NodePath("../Floor16/MeshInstance3D")
+
+[node name="Floor33" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -16)
+meshInstance = NodePath("../Floor17/MeshInstance3D")
+
+[node name="Floor34" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -16)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor35" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -16)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor36" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, -16)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor37" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8)
+meshInstance = NodePath("../Floor13/MeshInstance3D")
+
+[node name="Floor38" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -8)
+meshInstance = NodePath("../Floor14/MeshInstance3D")
+
+[node name="Floor39" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -8)
+meshInstance = NodePath("../Floor15/MeshInstance3D")
+
+[node name="Floor40" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -8)
+meshInstance = NodePath("../Floor16/MeshInstance3D")
+
+[node name="Floor41" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -8)
+meshInstance = NodePath("../Floor17/MeshInstance3D")
+
+[node name="Floor42" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -8)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor43" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -8)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor44" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, -8)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor45" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20)
+meshInstance = NodePath("../Floor13/MeshInstance3D")
+
+[node name="Floor46" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -20)
+meshInstance = NodePath("../Floor14/MeshInstance3D")
+
+[node name="Floor47" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -20)
+meshInstance = NodePath("../Floor15/MeshInstance3D")
+
+[node name="Floor48" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -20)
+meshInstance = NodePath("../Floor16/MeshInstance3D")
+
+[node name="Floor49" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -20)
+meshInstance = NodePath("../Floor17/MeshInstance3D")
+
+[node name="Floor50" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -20)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor51" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -20)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor52" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, -20)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor53" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -18)
+meshInstance = NodePath("../Floor13/MeshInstance3D")
+
+[node name="Floor54" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -18)
+meshInstance = NodePath("../Floor14/MeshInstance3D")
+
+[node name="Floor55" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -18)
+meshInstance = NodePath("../Floor15/MeshInstance3D")
+
+[node name="Floor56" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -18)
+meshInstance = NodePath("../Floor16/MeshInstance3D")
+
+[node name="Floor57" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -18)
+meshInstance = NodePath("../Floor17/MeshInstance3D")
+
+[node name="Floor58" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -18)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor59" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -18)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor60" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, -18)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor69" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12)
+meshInstance = NodePath("../Floor13/MeshInstance3D")
+
+[node name="Floor70" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -12)
+meshInstance = NodePath("../Floor14/MeshInstance3D")
+
+[node name="Floor71" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -12)
+meshInstance = NodePath("../Floor15/MeshInstance3D")
+
+[node name="Floor72" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -12)
+meshInstance = NodePath("../Floor16/MeshInstance3D")
+
+[node name="Floor73" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -12)
+meshInstance = NodePath("../Floor17/MeshInstance3D")
+
+[node name="Floor74" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -12)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor75" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -12)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor76" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, -12)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor77" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
+meshInstance = NodePath("../Floor13/MeshInstance3D")
+
+[node name="Floor78" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -10)
+meshInstance = NodePath("../Floor14/MeshInstance3D")
+
+[node name="Floor79" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -10)
+meshInstance = NodePath("../Floor15/MeshInstance3D")
+
+[node name="Floor80" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -10)
+meshInstance = NodePath("../Floor16/MeshInstance3D")
+
+[node name="Floor81" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -10)
+meshInstance = NodePath("../Floor17/MeshInstance3D")
+
+[node name="Floor82" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -10)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor83" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -10)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor84" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, -10)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor85" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, -14)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor86" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, 2)
+meshInstance = NodePath("../Floor9/MeshInstance3D")
+
+[node name="Floor87" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, 0)
+meshInstance = NodePath("../Floor10/MeshInstance3D")
+
+[node name="Floor88" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, -2)
+meshInstance = NodePath("../Floor11/MeshInstance3D")
+
+[node name="Floor89" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, -4)
+meshInstance = NodePath("../Floor12/MeshInstance3D")
+
+[node name="Floor90" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, -6)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor91" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, -16)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor92" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, -8)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor93" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, -20)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor94" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, -18)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor95" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, -12)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor96" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, -10)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor97" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -14)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor98" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 2)
+meshInstance = NodePath("../Floor9/MeshInstance3D")
+
+[node name="Floor99" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 0)
+meshInstance = NodePath("../Floor10/MeshInstance3D")
+
+[node name="Floor100" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -2)
+meshInstance = NodePath("../Floor11/MeshInstance3D")
+
+[node name="Floor101" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -4)
+meshInstance = NodePath("../Floor12/MeshInstance3D")
+
+[node name="Floor102" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -6)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor103" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -16)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor104" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -8)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor105" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -20)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor106" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -18)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor107" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -12)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
+
+[node name="Floor108" parent="Enviroment" node_paths=PackedStringArray("meshInstance") instance=ExtResource("1_kb3vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -10)
+meshInstance = NodePath("../Floor18/MeshInstance3D")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 7.3755, 40.6068, 1.46665)

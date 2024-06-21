@@ -62,14 +62,11 @@ public partial class Player : RigidBody3D
 					LinearVelocity += Vector3.Right;
 				}
 			}
-		}
-		if (@event is InputEventKey)
-		{
-			if (Input.IsKeyPressed(Key.W) && Input.IsKeyPressed(Key.S))
+			if (!Input.IsKeyPressed(Key.W) && !Input.IsKeyPressed(Key.S))
 			{
 				LinearVelocity *= new Vector3(1, 1, 0);
 			}
-			if (Input.IsKeyPressed(Key.A) && Input.IsKeyPressed(Key.D))
+			if (!Input.IsKeyPressed(Key.A) && !Input.IsKeyPressed(Key.D))
 			{
 				LinearVelocity *= new Vector3(0, 1, 1);
 			}
