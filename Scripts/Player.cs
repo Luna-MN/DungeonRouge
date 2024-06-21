@@ -22,7 +22,7 @@ public partial class Player : RigidBody3D
 			{
 
 				GD.Print(LinearVelocity);
-				if (LinearVelocity.Z == 0)
+				if (LinearVelocity.Z <= 1)
 				{
 					LinearVelocity += Vector3.Back * speed;
 				}
@@ -34,7 +34,7 @@ public partial class Player : RigidBody3D
 			if (Input.IsKeyPressed(Key.S))
 			{
 				GD.Print(LinearVelocity);
-				if (LinearVelocity.Z == 0)
+				if (LinearVelocity.Z >= -1)
 				{
 					LinearVelocity += Vector3.Forward * speed;
 				}
@@ -46,7 +46,7 @@ public partial class Player : RigidBody3D
 			if (Input.IsKeyPressed(Key.D))
 			{
 				GD.Print(LinearVelocity);
-				if (LinearVelocity.X == 0)
+				if (LinearVelocity.X >= -1)
 				{
 					LinearVelocity += Vector3.Left * speed;
 				}
@@ -59,7 +59,7 @@ public partial class Player : RigidBody3D
 			if (Input.IsKeyPressed(Key.A))
 			{
 				GD.Print(LinearVelocity);
-				if (LinearVelocity.X == 0)
+				if (LinearVelocity.X <= 1)
 				{
 					LinearVelocity += Vector3.Right * speed;
 				}
