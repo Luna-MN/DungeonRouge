@@ -14,14 +14,11 @@ public partial class Player : RigidBody3D
 	}
 	public override void _Input(InputEvent @event)
 	{
-		if (@event is InputEventKey keyPressed)
+		if (@event is InputEventKey)
 		{
-			GD.Print("mlem");
 			int speed = 20;
 			if (Input.IsKeyPressed(Key.W))
 			{
-
-				GD.Print(LinearVelocity);
 				if (LinearVelocity.Z <= 1)
 				{
 					LinearVelocity += Vector3.Back * speed;
@@ -33,7 +30,6 @@ public partial class Player : RigidBody3D
 			}
 			if (Input.IsKeyPressed(Key.S))
 			{
-				GD.Print(LinearVelocity);
 				if (LinearVelocity.Z >= -1)
 				{
 					LinearVelocity += Vector3.Forward * speed;
@@ -45,14 +41,12 @@ public partial class Player : RigidBody3D
 			}
 			if (Input.IsKeyPressed(Key.D))
 			{
-				GD.Print(LinearVelocity);
 				if (LinearVelocity.X >= -1)
 				{
 					LinearVelocity += Vector3.Left * speed;
 				}
 				if (LinearVelocity.X > -20)
 				{
-					GD.Print("called");
 					LinearVelocity += Vector3.Left;
 				}
 			}
@@ -69,10 +63,18 @@ public partial class Player : RigidBody3D
 				}
 			}
 		}
-		if (@event is InputEventKey keyNot && !keyNot.Pressed)
+		if (@event is InputEventKey)
 		{
-			LinearVelocity = new Vector3(0, 0, 0);
+			if (Input.IsKeyPressed(Key.W) && Input.IsKeyPressed(Key.S))
+			{
+				LinearVelocity *= new Vector3(1, 1, 0);
+			}
+			if (Input.IsKeyPressed(Key.A) && Input.IsKeyPressed(Key.D))
+			{
+				LinearVelocity *= new Vector3(0, 1, 1);
+			}
 
 		}
+
 	}
 }
