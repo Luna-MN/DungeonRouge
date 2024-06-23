@@ -4,6 +4,7 @@ using System;
 public partial class Player : RigidBody3D
 {
 	private Key oldkey;
+	private int speed = 20;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -17,7 +18,6 @@ public partial class Player : RigidBody3D
 	{
 		if (@event is InputEventKey keyP)
 		{
-			int speed = 20;
 			if (Input.IsKeyPressed(Key.W))
 			{
 				if (keyP.Pressed)
@@ -103,7 +103,14 @@ public partial class Player : RigidBody3D
 			{
 				LinearVelocity *= new Vector3(0, 1, 1);
 			}
-
+			if (Input.IsKeyPressed(Key.Shift) && keyP.Pressed)
+			{
+				speed *= 2;
+			}
+			if (!Input.IsKeyPressed(Key.Shift) && keyP.Pressed)
+			{
+				speed /= 2;
+			}
 		}
 
 	}
