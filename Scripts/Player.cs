@@ -123,6 +123,22 @@ public partial class Player : RigidBody3D
 					OneShot = true
 				};
 				speed = 40;
+				if (oldkey == Key.W)
+				{
+					LinearVelocity = Vector3.Back * speed;
+				}
+				if (oldkey == Key.S)
+				{
+					LinearVelocity = Vector3.Forward * speed;
+				}
+				if (oldkey == Key.D)
+				{
+					LinearVelocity = Vector3.Left * speed;
+				}
+				if (oldkey == Key.A)
+				{
+					LinearVelocity = Vector3.Right * speed;
+				}
 				timerOn = true;
 			}
 		}
