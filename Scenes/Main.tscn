@@ -506,3 +506,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -15, 0
 
 [node name="Wall4" parent="." instance=ExtResource("2_yq6aj")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -15, 0, -3)
+
+[node name="Wall5" parent="." node_paths=PackedStringArray("meshInstance") instance=ExtResource("2_yq6aj")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -15, 0, -7)
+meshInstance = NodePath("../Wall4/MeshInstance3D")
