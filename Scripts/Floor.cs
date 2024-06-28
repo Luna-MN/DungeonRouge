@@ -1,6 +1,9 @@
 using Godot;
 using System;
 using System.Collections.Generic;
+/// <summary>
+/// Represents a floor in the game.
+/// </summary>
 [Tool]
 public partial class Floor : RigidBody3D
 {
