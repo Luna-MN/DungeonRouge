@@ -137,7 +137,7 @@ public partial class Player : RigidBody3D
 			if (Input.IsKeyPressed(Key.Shift) && keyP.Pressed)
 			{
 				// Create a new timer with a wait time of 0.5 seconds
-				Timer timer = new Timer
+				timer = new Timer
 				{
 					Autostart = true,
 					WaitTime = 0.5f,
