@@ -4,7 +4,7 @@ using System;
 public partial class Player : CharacterBody3D
 {
 	private Key oldkey;
-	private int speed = 100;
+	private int speed = 20;
 	private Timer timer = new Timer();
 	private bool timerOn = false;
 
@@ -39,6 +39,7 @@ public partial class Player : CharacterBody3D
 		}
 
 		Velocity = newVelocity;
+		MoveAndSlide();
 
 	}
 
