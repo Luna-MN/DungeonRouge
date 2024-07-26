@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using System.Linq;
 
 public partial class Player : CharacterBody3D
 {
@@ -7,11 +8,15 @@ public partial class Player : CharacterBody3D
 	private int speed = 20;
 	private Timer timer = new Timer();
 	private bool timerOn = false;
+	KinematicCollision3D[] kinShape3D;
+	public Callable callable;
+
+
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-		// Add any initialization code here
+		callable = new Callable(this, "AreaEntered");
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -40,7 +45,6 @@ public partial class Player : CharacterBody3D
 
 		Velocity = newVelocity;
 		MoveAndSlide();
-
 	}
 
 	// Called for every input event received.
@@ -49,6 +53,10 @@ public partial class Player : CharacterBody3D
 		if (@event is InputEventKey keyP)
 		{
 		}
+	}
+	public void AreaEntered()
+	{
+		GD.Print("Area Entered");
 	}
 }
 
