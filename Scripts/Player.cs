@@ -24,7 +24,6 @@ public partial class Player : CharacterBody3D
 	{
 
 		Vector3 newVelocity = Vector3.Zero;
-		GD.Print(Engine.GetFramesPerSecond());
 
 		if (Input.IsKeyPressed(Key.W))
 		{
