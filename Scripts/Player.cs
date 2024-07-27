@@ -12,7 +12,10 @@ public partial class Player : CharacterBody3D
 	public Callable callable;
 
 
-
+	private void AreaEntered(Node3D body)
+	{
+		GD.Print("Area Entered");
+	}
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -53,9 +56,6 @@ public partial class Player : CharacterBody3D
 		{
 		}
 	}
-	public void AreaEntered()
-	{
-		GD.Print("Area Entered");
-	}
+
 }
 

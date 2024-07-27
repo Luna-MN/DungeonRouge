@@ -8,7 +8,7 @@ public partial class Area3D : Godot.Area3D
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-		player = GetTree().Root.GetNode<Player>("./Player");
+		player = GetTree().Root.GetNode<Player>("/root/Node3D/Player");
 
 		GD.Print(player);
 		Connect("body_entered", player.callable);

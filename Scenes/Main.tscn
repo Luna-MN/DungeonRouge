@@ -516,3 +516,5 @@ fov = 101.566
 
 [node name="MeshInstance3D" parent="." instance=ExtResource("4_l2jeb")]
 transform = Transform3D(3.725, 0, 0, 0, 3.725, 0, 0, 0, 3.725, -7, -0.15671, -8)
+
+[node name="Area3D" type="Area3D" parent="."]
