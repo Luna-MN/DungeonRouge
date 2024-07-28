@@ -1,7 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://1bsl8h5vr0du"]
+[gd_scene load_steps=7 format=3 uid="uid://1bsl8h5vr0du"]
 
 [ext_resource type="PackedScene" uid="uid://caa6tydyirhr" path="res://Scenes/floor.tscn" id="1_kb3vk"]
-[ext_resource type="Script" path="res://Scenes/main.cs" id="1_r85y5"]
 [ext_resource type="PackedScene" uid="uid://ck5rjpa4p82an" path="res://Scenes/Wall.tscn" id="2_yq6aj"]
 [ext_resource type="Script" path="res://Scripts/Player.cs" id="3_1hk2b"]
 [ext_resource type="PackedScene" uid="uid://dfhasadpmw5k5" path="res://area.tscn" id="4_l2jeb"]
@@ -11,8 +10,6 @@
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0e6ol"]
 
 [node name="Node3D" type="Node3D"]
-script = ExtResource("1_r85y5")
-playerPath = NodePath("Player")
 
 [node name="Enviroment" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.97892, -0.00269508, -0.0103303)

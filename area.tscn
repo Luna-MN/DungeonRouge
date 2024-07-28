@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dfhasadpmw5k5"]
 
-[ext_resource type="Script" path="res://Area3D.cs" id="1_3fb68"]
+[ext_resource type="Script" path="res://Scripts/Area3D.cs" id="1_glcx5"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vuiln"]
 vertex_color_use_as_albedo = true
@@ -17,7 +17,7 @@ height = 2.15455
 mesh = SubResource("CylinderMesh_41tie")
 
 [node name="Area3D" type="Area3D" parent="."]
-script = ExtResource("1_3fb68")
+script = ExtResource("1_glcx5")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
 shape = SubResource("CylinderShape3D_c4w2w")
