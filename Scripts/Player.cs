@@ -9,17 +9,30 @@ public partial class Player : CharacterBody3D
 	private Timer timer = new Timer();
 	private bool timerOn = false;
 	KinematicCollision3D[] kinShape3D;
-	public Callable callable;
+	public Callable callableEntered, callableExited;
 
 
 	private void AreaEntered(Node3D body)
 	{
-		GD.Print("Area Entered");
+		GD.Print("Area Entered", body);
+		if (body is Player)
+		{
+			GD.Print("Player Entered");
+		}
+	}
+	private void AreaExited(Node3D body)
+	{
+		GD.Print("Area Exited", body);
+		if (body is Player)
+		{
+			GD.Print("Player Exited");
+		}
 	}
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-		callable = new Callable(this, "AreaEntered");
+		callableEntered = new Callable(this, "AreaEntered");
+		callableExited = new Callable(this, "AreaExited");
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.

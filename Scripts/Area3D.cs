@@ -11,7 +11,9 @@ public partial class Area3D : Godot.Area3D
 		player = GetTree().Root.GetNode<Player>("/root/Node3D/Player");
 
 		GD.Print(player);
-		Connect("body_entered", player.callable);
+		Connect("body_entered", player.callableEntered);
+		Connect("body_exited", player.callableExited);
+
 	}
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
