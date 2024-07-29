@@ -4,13 +4,14 @@ using System.Linq;
 
 public partial class Player : CharacterBody3D
 {
+	[Export]
+	public MeshInstance3D mesh;
 	private Key oldkey;
 	private int speed = 20;
-	private Timer timer = new Timer();
-	private bool timerOn = false;
+	public Timer timer = new Timer { WaitTime = 10, OneShot = true, Autostart = false };
+	private bool Entered = false;
 	KinematicCollision3D[] kinShape3D;
 	public Callable callableEntered, callableExited;
-
 
 	private void AreaEntered(Node3D body)
 	{
@@ -18,6 +19,7 @@ public partial class Player : CharacterBody3D
 		if (body is Player)
 		{
 			GD.Print("Player Entered");
+			Entered = true;
 		}
 	}
 	private void AreaExited(Node3D body)
@@ -26,6 +28,7 @@ public partial class Player : CharacterBody3D
 		if (body is Player)
 		{
 			GD.Print("Player Exited");
+			Entered = false;
 		}
 	}
 	// Called when the node enters the scene tree for the first time.
@@ -33,6 +36,7 @@ public partial class Player : CharacterBody3D
 	{
 		callableEntered = new Callable(this, "AreaEntered");
 		callableExited = new Callable(this, "AreaExited");
+		AddChild(timer);
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -60,6 +64,15 @@ public partial class Player : CharacterBody3D
 
 		Velocity = newVelocity;
 		MoveAndSlide();
+		if (timer.IsStopped())
+		{
+			if (Entered)
+			{
+				GD.Print("Player Damage");
+
+			}
+			mesh.QueueFree();
+		}
 	}
 
 	// Called for every input event received.

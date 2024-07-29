@@ -13,6 +13,7 @@ public partial class Area3D : Godot.Area3D
 		GD.Print(player);
 		Connect("body_entered", player.callableEntered);
 		Connect("body_exited", player.callableExited);
+		player.timer.Start();
 
 	}
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
