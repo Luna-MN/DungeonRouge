@@ -64,6 +64,9 @@ public partial class Player : CharacterBody3D
 
 		Velocity = newVelocity;
 		MoveAndSlide();
+		/* when we have aoe creation make this into a for each loop for all meshes
+		and check if the player is in the aoe is the same because it doesn't matter
+		which AOE their in they will still take damage*/
 		if (timer.IsStopped())
 		{
 			if (Entered)
