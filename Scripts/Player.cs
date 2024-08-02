@@ -91,6 +91,8 @@ public partial class Player : CharacterBody3D
 			mesh = meshScene.Instantiate<MeshInstance3D>();
 			GD.Print("Mesh Created");
 			main.AddChild(mesh);
+			mesh.Position = new Vector3(Position.X, 0.4f, Position.Z);
+			Stimer.Start();
 		}
 	}
 
