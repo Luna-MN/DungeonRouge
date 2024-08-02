@@ -1,6 +1,7 @@
 using Godot;
 using GodotPlugins.Game;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 public partial class Player : CharacterBody3D
@@ -9,6 +10,7 @@ public partial class Player : CharacterBody3D
 	public MeshInstance3D mesh;
 	[Export]
 	public PackedScene meshScene;
+	private Dictionary<MeshInstance3D, Timer> meshTimer = new Dictionary<MeshInstance3D, Timer>();
 	private Key oldkey;
 	private int speed = 20;
 	public Timer timer = new Timer { WaitTime = 5, OneShot = true, Autostart = false };
@@ -46,6 +48,7 @@ public partial class Player : CharacterBody3D
 		AddChild(Stimer);
 		Stimer.Start();
 		GD.Print(main);
+		meshTimer.Add(mesh, Stimer);
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -76,21 +79,32 @@ public partial class Player : CharacterBody3D
 		/* when we have aoe creation make this into a for each loop for all meshes
 		and check if the player is in the aoe is the same because it doesn't matter
 		which AOE their in they will still take damage*/
-		if (timer.IsStopped())
+		foreach (var mesh in meshTimer)
 		{
-			if (Entered)
+			if (mesh.Value.IsStopped())
 			{
-				GD.Print("Player Damage");
-
+				if (Entered)
+				{
+					GD.Print("Player Damage");
+				}
+				meshTimer.Remove(mesh.Key);
+				mesh.Key.QueueFree();
 			}
-			mesh.QueueFree();
-			timer.Start();
 		}
 		if (Stimer.IsStopped())
 		{
 			mesh = meshScene.Instantiate<MeshInstance3D>();
-			GD.Print("Mesh Created");
+
+			Timer Mtimer = new Timer { WaitTime = 5, OneShot = true, Autostart = false };
+			main.AddChild(Mtimer);
+			Mtimer.Start();
+
 			main.AddChild(mesh);
+
+			meshTimer.Add(mesh, Mtimer);
+
+			GD.Print("Mesh Created");
+
 			mesh.Position = new Vector3(Position.X, 0.4f, Position.Z);
 			Stimer.Start();
 		}
