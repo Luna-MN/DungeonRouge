@@ -499,6 +499,7 @@ axis_lock_angular_y = true
 axis_lock_angular_z = true
 script = ExtResource("3_1hk2b")
 mesh = NodePath("../MeshInstance3D")
+meshScene = ExtResource("4_l2jeb")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.22395, 0)

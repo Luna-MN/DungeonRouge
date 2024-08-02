@@ -1,4 +1,5 @@
 using Godot;
+using GodotPlugins.Game;
 using System;
 using System.Linq;
 
@@ -6,11 +7,15 @@ public partial class Player : CharacterBody3D
 {
 	[Export]
 	public MeshInstance3D mesh;
+	[Export]
+	public PackedScene meshScene;
 	private Key oldkey;
 	private int speed = 20;
-	public Timer timer = new Timer { WaitTime = 10, OneShot = true, Autostart = false };
+	public Timer timer = new Timer { WaitTime = 5, OneShot = true, Autostart = false };
+	public Timer Stimer = new Timer { WaitTime = 10, OneShot = true, Autostart = false };
 	private bool Entered = false;
 	KinematicCollision3D[] kinShape3D;
+	public Node3D main;
 	public Callable callableEntered, callableExited;
 
 	private void AreaEntered(Node3D body)
@@ -34,9 +39,13 @@ public partial class Player : CharacterBody3D
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+		main = GetNode<Node3D>("/root/Node3D");
 		callableEntered = new Callable(this, "AreaEntered");
 		callableExited = new Callable(this, "AreaExited");
 		AddChild(timer);
+		AddChild(Stimer);
+		Stimer.Start();
+		GD.Print(main);
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -75,6 +84,13 @@ public partial class Player : CharacterBody3D
 
 			}
 			mesh.QueueFree();
+			timer.Start();
+		}
+		if (Stimer.IsStopped())
+		{
+			mesh = meshScene.Instantiate<MeshInstance3D>();
+			GD.Print("Mesh Created");
+			main.AddChild(mesh);
 		}
 	}
 
