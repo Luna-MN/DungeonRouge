@@ -11,7 +11,7 @@ public partial class Player : CharacterBody3D
 	[Export]
 	public PackedScene meshScene;
 	private Dictionary<MeshInstance3D, Timer> meshTimer = new Dictionary<MeshInstance3D, Timer>();
-	private Key oldkey;
+	private MouseButton pressed;
 	private int speed = 20;
 	public Timer timer = new Timer { WaitTime = 5, OneShot = true, Autostart = false };
 	public Timer Stimer = new Timer { WaitTime = 10, OneShot = true, Autostart = false };
@@ -73,6 +73,12 @@ public partial class Player : CharacterBody3D
 		{
 			newVelocity += Vector3.Left * speed;
 		}
+		if (Input.IsMouseButtonPressed(MouseButton.Left))
+		{
+			pressed = MouseButton.Left;
+			GD.Print("Mouse Clicked");
+		}
+
 
 		Velocity = newVelocity;
 		MoveAndSlide();
@@ -109,14 +115,5 @@ public partial class Player : CharacterBody3D
 			Stimer.Start();
 		}
 	}
-
-	// Called for every input event received.
-	public override void _Input(InputEvent @event)
-	{
-		if (@event is InputEventKey keyP)
-		{
-		}
-	}
-
 }
 
