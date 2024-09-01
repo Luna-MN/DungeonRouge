@@ -14,7 +14,7 @@ public partial class Player : CharacterBody3D
 	private MouseButton pressed;
 	private int speed = 20;
 	public Timer timer = new Timer { WaitTime = 5, OneShot = true, Autostart = false };
-	public Timer Stimer = new Timer { WaitTime = 10, OneShot = true, Autostart = false };
+	public Timer Stimer = new Timer { WaitTime = 1, OneShot = true, Autostart = false };
 	private bool Entered = false;
 	KinematicCollision3D[] kinShape3D;
 	public Node3D main;
@@ -101,7 +101,7 @@ public partial class Player : CharacterBody3D
 		{
 			mesh = meshScene.Instantiate<MeshInstance3D>();
 
-			Timer Mtimer = new Timer { WaitTime = 5, OneShot = true, Autostart = false };
+			Timer Mtimer = new Timer { WaitTime = 0.5f, OneShot = true, Autostart = false };
 			main.AddChild(Mtimer);
 			Mtimer.Start();
 
